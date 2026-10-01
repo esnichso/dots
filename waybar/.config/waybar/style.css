@@ -73,6 +73,35 @@ window#waybar {
 	padding: 0 6px;
 }
 
+#idle_inhibitor,
+#custom-nightlight,
+#custom-kbd,
+#power-profiles-daemon {
+	background: @bg-alt;
+	padding: 0 8px;
+	border-radius: 10px;
+}
+#power-profiles-daemon.performance {
+	color: @accent;
+}
+#power-profiles-daemon.default {
+	color: @accent;
+}
+#power-profiles-daemon.balanced {
+	color: @warning;
+}
+#power-profiles-daemon.power-saver {
+	color: @critical;
+}
+#idle_inhibitor.activated {
+	color: @accent;
+}
+
+#custom-nightlight.on {
+	background: @warning;
+	color: @bg-alt;
+}
+
 #system #network,
 #system #bluetooth,
 #system #battery,

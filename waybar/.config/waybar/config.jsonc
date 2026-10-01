@@ -16,7 +16,7 @@
     	"orientation": "horizontal",
     	"modules": ["custom/winstart", "hyprland/window#class", "custom/winsep", "hyprland/window#prog", "custom/winend"]
     },
-    "modules-center": ["clock"],
+    "modules-center": ["group/clockmenu"],
     "modules-right": ["tray", "mpris", "group/system"],
     "group/system": {
     	"orientation": "horizontal",
@@ -69,10 +69,55 @@
 		"tooltip-format": "{ifname}: {ipaddr}",
 		"on-click": "pkill -x nmtui || kitty --class tui-popup -e nmtui"
 	},
+
+	"group/clockmenu": {
+	  "orientation": "horizontal",
+	  "drawer": {
+	    "click-to-reveal": true,
+	    "transition-duration": 300,
+	    "children-class": "clock-extra"
+	  },
+	  "modules": ["clock", "power-profiles-daemon", "idle_inhibitor", "custom/nightlight", "custom/kbd"]
+	},
+	"power-profiles-daemon": {
+		"format": "{icon}",
+		"format-icons": {
+			"default": "󰓅",
+			"power-saver": "󰾆",
+			"balanced": "󰾅",		
+			"performace": "󰓅"
+		},
+		"tooltip-format": "Power profile: {profile}"
+	},
+	
+	"idle_inhibitor": {
+	  "format": "{icon}",
+	  "format-icons": { "activated": "󰅶", "deactivated": "󰾪" },
+	  "tooltip": false
+	},
+	
+	"custom/nightlight": {
+	  "exec": "pgrep -x hyprsunset >/dev/null && echo '{\"alt\":\"on\",\"class\":\"on\"}' || echo '{\"alt\":\"off\",\"class\":\"off\"}'",
+	  "return-type": "json",
+	  "format": "{icon}",
+	  "format-icons": { "on": "", "off": "" },
+	  "interval": 10,
+	  "signal": 9,
+	  "on-click": "pkill -x hyprsunset || setsid -f hyprsunset -t 4000; sleep 0.2; pkill -RTMIN+9 waybar",
+	  	  "tooltip": false
+	},
+	
+	"custom/kbd": {
+	  "exec": "echo 0 || brightnessctl -d <kbd-device> get",
+	  "format": "󰌌 {}",
+	  "interval": 10,
+	  "signal": 8,
+	  "on-click": "d=<kbd-device>; c=$(brightnessctl -d $d get); m=$(brightnessctl -d $d max); brightnessctl -q -d $d set $(( c >= m ? 0 : c + 1 )); pkill -RTMIN+8 waybar",
+	  	  "tooltip": false
+	},
 		    
     "clock": {
-        "tooltip-format": "<big>{:%d. %B %Y}</big>",
-        "format-alt": "{:%Y-%m-%d}"
+        "tooltip-format": "<big>{:%d. %B %Y}</big>"
     },
 
     "bluetooth": {
