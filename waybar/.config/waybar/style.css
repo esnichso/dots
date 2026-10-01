@@ -66,13 +66,19 @@ window#waybar {
 	background: alpha(@bg, 0.8);
 	padding: 0 22px;
 	border-radius: 80px;
-	margin: 0 2px;
+	margin: 0 0px;
+}
+
+#custom-notifications {
+	padding: 0 6px;
 }
 
 #system #network,
 #system #bluetooth,
-#system #battery {
-	padding: 0 8px;
+#system #battery,
+#system #wireplumber,
+#system #notifications {
+	padding: 0 6px;
 }
 
 #battery.warning { color: @warning; }

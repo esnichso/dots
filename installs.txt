@@ -33,3 +33,6 @@ rofi-calc
 rofi-emoji
 cliphist
 wtype
+
+swaync
+libnotify

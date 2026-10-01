@@ -20,7 +20,7 @@
     "modules-right": ["tray", "mpris", "group/system"],
     "group/system": {
     	"orientation": "horizontal",
-    	"modules": ["wireplumber", "bluetooth", "network", "battery"]
+    	"modules": ["custom/notifications","wireplumber", "bluetooth", "network", "battery"]
     },
 
 	"hyprland/workspaces":  {
@@ -109,5 +109,24 @@
     	"tooltip-format": "{node_name}: {volume}",
     	"on-click": "pkill -x wiremix || kitty --class tui-popup -e wiremix --tab output",
     	"on-click-right": "swayosd-client --output-volume mute-toggle"  	
+    },
+
+    "custom/notifications": {
+    	"exec": "swaync-client -swb",
+    	"return-type": "json",
+    	"escape": true,
+    	"tooltip": false,
+    	"format": "{icon}",
+    	"format-icons": {
+    		"notification": "",
+			"none": "",
+			"dnd-notification": "",
+			"dnd-none": "",
+			"inhibited-notification": "",
+			"dnd-inhibited-notification": "",
+			"dnd-inhibited-none": ""    		
+    	},
+    	"on-click": "swaync-client -t -sw",
+    	"on-clicl-right": "swaync-client -d -sw"
     }
 }
