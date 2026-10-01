@@ -8,7 +8,7 @@ entry    { placeholder: "Search clipboard…"; }
 
 textbox  { text-color: @fg-dim; }
 
-listview { lines: 10; }
+listview { lines: 5; }
 element  { spacing: 12px; }
-element-icon { size: 48px; }
+element-icon { size: 60px; }
 element-text { vertical-align: 0.5; }
