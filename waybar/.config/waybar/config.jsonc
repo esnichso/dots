@@ -62,11 +62,13 @@
 	},
 
 	"network": {
-		"format-wifi": "{icon}{essid}", // add signal strenght idicator
-		"icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
+		"format-wifi": "{icon}", 
+		"format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
 		"format-ethernet": "󰈀",
 		"format-disconnect": "󰤮",
-		"tooltip-format": "{ifname}: {ipaddr}",
+		"format-disabled": "󰤮",
+		"format": "󰤮",
+		"tooltip-format": "{ifname}:\n{ipaddr}\n{essid}",
 		"on-click": "pkill -x nmtui || kitty --class tui-popup -e nmtui"
 	},
 
