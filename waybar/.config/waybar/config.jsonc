@@ -20,7 +20,7 @@
     "modules-right": ["tray", "mpris", "group/system"],
     "group/system": {
     	"orientation": "horizontal",
-    	"modules": ["bluetooth", "network", "battery"]
+    	"modules": ["wireplumber", "bluetooth", "network", "battery"]
     },
 
 	"hyprland/workspaces":  {
@@ -57,7 +57,7 @@
 		"max-length": 20,
 		"rewrite": {
 			".* - (?!fish$)(\\S+)": "$1",
-			".* - fish": "fish,"
+			".* - fish": "fish"
 		}
 	},
 
@@ -66,7 +66,8 @@
 		"icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
 		"format-ethernet": "󰈀",
 		"format-disconnect": "󰤮",
-		"tooltip-format": "{ifname}: {ipaddr}"
+		"tooltip-format": "{ifname}: {ipaddr}",
+		"on-click": "kitty --class tui-popup -e nmtui"
 	},
 		    
     "clock": {
@@ -76,7 +77,9 @@
 
     "bluetooth": {
     	"format": "󰂯",
-    	"format-connected": "󰂯 {device-alias}"
+    	"format-connected": "󰂯 {device-alias}",
+    	"on-click": "kitty --class tui-popup -e bluetui",
+    	"on-click-right": "rfkill toggle bluetooth"
     },
 
     "tray": {
@@ -97,5 +100,14 @@
     	"format-icons": ["󰁺", "󰁼", "󰁾", "󰂀", "󰁹"],
     	"format-charging": "󰂄 {capacity}",
     	"format-plugged": "󰂄 {capacity}"    	
+    },
+
+    "wireplumber": {
+    	"format": "{icon}",
+    	"format-icons": ["", "", ""],
+    	"format-muted": "",
+    	"tooltip-format": "{node_name}: {volume}",
+    	"on-click": "kitty --class tui-popup -e wiremix --tab output",
+    	"on-click-right": "swayosd-client --output-volume mute-toggle"  	
     }
 }

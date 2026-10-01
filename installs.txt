@@ -21,3 +21,8 @@ firefox
 playerctl
 
 waybar
+
+swayosd
+
+bluetui
+wiremix
