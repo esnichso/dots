@@ -28,3 +28,8 @@ bluetui
 wiremix
 
 rofi
+
+rofi-calc
+rofi-emoji
+cliphist
+wtype

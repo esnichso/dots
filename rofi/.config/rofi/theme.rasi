@@ -20,7 +20,7 @@ window {
 
 mainbox {
 	spacing: 10px;
-	children: [inputbar, listview, modeswitcher];
+	children: [inputbar, listview];
 }
 
 inputbar {
@@ -40,9 +40,10 @@ entry {
 	placeholder-color: @fg-dim;
 }
 
+
 listview {
 	lines: 8;
-	columnes: 1;
+	columns: 1;
 	fixed-height: true;
 	scrollbar: false;
 	spacing: 4px;
@@ -66,11 +67,6 @@ element-text {
 	text-color: inherit;
 	vertical-align: 0.5;
 }
-
-mode-switcher {
-	spacing: 6px;
-}
-
 button {
 	padding: 4px 10px;
 	border-radius: 999px;

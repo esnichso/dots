@@ -1,0 +1,14 @@
+
+@import "theme.rasi"
+
+window   { width: 800px; }
+mainbox  { children: [ inputbar, listview ]; }
+inputbar { children: [ prompt, entry ]; }
+entry    { placeholder: "Search clipboard…"; }
+
+textbox  { text-color: @fg-dim; }
+
+listview { lines: 10; }
+element  { spacing: 12px; }
+element-icon { size: 48px; }
+element-text { vertical-align: 0.5; }

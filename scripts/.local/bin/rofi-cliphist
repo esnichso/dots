@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Rofi script mode: clipboard history via cliphist
+cache="${XDG_CACHE_HOME:-$HOME/.cache}/cliphist-thumbs"
+mkdir -p "$cache"
+img_re='^\[\[ binary data .* (png|jpe?g|bmp|webp) '
+
+list() {
+  printf '\0use-hot-keys\x1ftrue\n'
+  printf '\0message\x1f%s\n' "Enter: copy  ·  Shift+Del: delete"
+  cliphist list | while IFS= read -r line; do
+    id=${line%%$'\t'*}       # part before the tab
+    text=${line#*$'\t'}      # part after the tab
+    if [[ $text =~ $img_re ]]; then
+      img="$cache/$id.${BASH_REMATCH[1]}"
+      [ -s "$img" ] || printf '%s\n' "$line" | cliphist decode >"$img"
+      printf 'Image\0icon\x1f%s\x1finfo\x1f%s\n' "$img" "$line"
+    else
+      printf '%s\0info\x1f%s\n' "$text" "$line"
+    fi
+  done
+}
+
+case "${ROFI_RETV:-0}" in
+  0)  list ;;
+  1)  printf '%s\n' "$ROFI_INFO" | cliphist decode | wl-copy >/dev/null 2>&1 ;;
+  10) printf '%s\n' "$ROFI_INFO" | cliphist delete; list ;;
+esac

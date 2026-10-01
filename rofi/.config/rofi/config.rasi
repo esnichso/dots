@@ -12,6 +12,8 @@ configuration {
 	display-drun: "Apps";
 	display-run: "Run";
 	display-window: "Windows";
+	display-calc: "Calc";
+	display-emoji: "Emoji";
 
 	kb-row-tab: "";
 	kb-element-next: "";

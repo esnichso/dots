@@ -1,0 +1,23 @@
+@import "theme.rasi"
+
+window { width: 600px;}
+mainbox { children: [inputbar, listview]; }
+
+
+listview  {
+	columns: 6;
+	lines: 6;
+	flow: horizontal;
+	spacing: 4px;
+}
+
+element {
+	children: [element-text];
+	padding: 8px 8px;
+	border-radius: 10px;
+}
+element-text {
+	font: "JetsBrainMono Nerd Font 18";
+	horizontal-align: 0.5;
+	vertical-align: 0.5;
+}
