@@ -127,6 +127,6 @@
 			"dnd-inhibited-none": ""    		
     	},
     	"on-click": "swaync-client -t -sw",
-    	"on-clicl-right": "swaync-client -d -sw"
+    	"on-click-right": "swaync-client -d -sw"
     }
 }
