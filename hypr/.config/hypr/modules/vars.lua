@@ -1,6 +1,6 @@
 return {
 	terminal = "kitty",
 	fileManager = "dolphin",
-	menu = "rofi",
+	menu = "pkill rofi || rofi -show drun",
 	bar = "waybar"
 }
