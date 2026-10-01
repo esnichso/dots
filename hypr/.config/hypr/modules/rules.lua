@@ -47,6 +47,17 @@ hl.window_rule({
     float = true,
 })
 
+hl.layer_rule({
+	match = { namespace = "rofi" },
+	blur = true,
+	ignore_alpha = 0.1
+})
+
+hl.layer_rule({
+	match = { namespace = "waybar" },
+	blur = true,
+	ignore_alpha = 0.1
+})
 
 -- Ref https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
 -- "Smart gaps" / "No gaps when only"

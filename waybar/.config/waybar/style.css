@@ -29,7 +29,7 @@ window#waybar {
 }
 
 #workspaces {
-	background: @bg;
+	background: alpha(@bg, 0.8);
 	padding: 0 8px;
 	border-radius: 80px;
 	margin: 0 2px;
@@ -42,28 +42,28 @@ window#waybar {
 	font-size: 20px;
 }
 #window.class {
-	background: @accent;
+	background: alpha(@accent, 0.8);
 	color: @bg-alt;
 }
 #custom-winsep {
-	background: @bg-alt;
-	color: @accent
+	background: alpha(@bg-alt, 0.8);
+	color: alpha(@accent, 0.8);
 }
 #window.prog {
-	background: @bg-alt;
+	background: alpha(@bg-alt, 0.8);
 }
 #custom-winend {
-	color: @bg-alt;
+	color: alpha(@bg-alt, 0.8);
 }
 #custom-winstart {
-	color: @accent;
+	color: alpha(@accent, 0.8);
 }
 
 #clock,
 #mpris,
 #system,
 #tray {
-	background: @bg;
+	background: alpha(@bg, 0.8);
 	padding: 0 22px;
 	border-radius: 80px;
 	margin: 0 2px;

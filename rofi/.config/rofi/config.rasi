@@ -1,5 +1,5 @@
 configuration {
-	modi: "drun,run,window";
+	modi: "drun,run";
 	show-icons: true;
 	icon-theme: "Papirus";
 	terminal: "kitty";
@@ -9,9 +9,15 @@ configuration {
 	sorting-method: "fzf";
 
 	drun-display-format: "{name}";
-	display-drum: "Apps";
+	display-drun: "Apps";
 	display-run: "Run";
 	display-window: "Windows";
+
+	kb-row-tab: "";
+	kb-element-next: "";
+	kb-element-prev: "";
+	kb-mode-next: "Tab";
+	kb-mode-previous: "ISO_Left_Tab";
 }
 
-@theme "Arc-Dark"
+@theme "theme"
