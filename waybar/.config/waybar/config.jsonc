@@ -67,7 +67,7 @@
 		"format-ethernet": "󰈀",
 		"format-disconnect": "󰤮",
 		"tooltip-format": "{ifname}: {ipaddr}",
-		"on-click": "kitty --class tui-popup -e nmtui"
+		"on-click": "pkill -x nmtui || kitty --class tui-popup -e nmtui"
 	},
 		    
     "clock": {
@@ -78,7 +78,7 @@
     "bluetooth": {
     	"format": "󰂯",
     	"format-connected": "󰂯 {device-alias}",
-    	"on-click": "kitty --class tui-popup -e bluetui",
+    	"on-click": "pkill -x bluetui || kitty --class tui-popup -e bluetui",
     	"on-click-right": "rfkill toggle bluetooth"
     },
 
@@ -107,7 +107,7 @@
     	"format-icons": ["", "", ""],
     	"format-muted": "",
     	"tooltip-format": "{node_name}: {volume}",
-    	"on-click": "kitty --class tui-popup -e wiremix --tab output",
+    	"on-click": "pkill -x wiremix || kitty --class tui-popup -e wiremix --tab output",
     	"on-click-right": "swayosd-client --output-volume mute-toggle"  	
     }
 }
