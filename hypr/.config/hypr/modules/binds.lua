@@ -21,7 +21,7 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(vars.fileManager))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(vars.menu))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(vars.clipboard))
 hl.bind(mainMod .. " + PERIOD", hl.dsp.exec_cmd(vars.emoji))
-hl.bind(mainMod .. " + MINUS", hl.dsp.exec_cmd("kitty --class tui-popup -e qalc"))
+hl.bind(mainMod .. " + MINUS", hl.dsp.exec_cmd("pkill -x qalc || kitty --class tui-popup -e qalc"))
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
