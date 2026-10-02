@@ -1,0 +1,37 @@
+{
+	"group/work": {
+	    	"orientation": "horizontal",
+	    	"modules": ["custom/winstart", "hyprland/window#class", "custom/winsep", "hyprland/window#prog", "custom/winend"]
+	},
+
+	"hyprland/window#class": {
+		"format": "{class}",
+		"icon": true,
+		"icon-size": 16,
+		"rewrite": {
+			"": "Desktop",
+		}
+	},
+
+	"hyprland/window#prog": {
+		"format": "{title}",
+		"max-length": 20,
+		"rewrite": {
+			".* - (?!fish$)(\\S+)": "$1",
+			".* - fish": "fish"
+		}
+	},
+
+	"custom/winsep": {
+		"format": " ",
+		"tooltip": "false"
+	},
+	"custom/winend": {
+		"format": " ",
+		"tooltip": "false"
+	},
+	"custom/winstart": {
+		"format": "",
+		"tooltip": "false"
+	}
+}

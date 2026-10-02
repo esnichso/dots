@@ -1,0 +1,50 @@
+#network,
+#bluetooth,
+#battery,
+#wireplumber,
+#custom-notifications {
+	padding: 0 8px;
+}
+
+#custom-right,
+#custom-round-right {
+	font-size: 20px;
+	margin: -1px 0; 
+}
+
+#custom-round-right {
+	color: @bg;
+}
+
+#battery {
+	background: @bg;
+}
+
+#custom-right.bg0 {
+	color: @bg;
+	background: @bg-alt;
+}
+
+#network {
+	background: @bg-alt;
+}
+
+#custom-right.bg1 {
+	color: @bg-alt;
+	background: @fg-dim;
+}
+
+#bluetooth {
+	background: @fg-dim;
+}
+
+#custom-right.bg2 {
+	color: @fg-dim;
+	background: @fg;
+}
+
+#wireplumber {
+	background: @fg;
+	color: @bg-alt;
+}
+

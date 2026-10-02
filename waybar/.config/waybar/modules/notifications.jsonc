@@ -1,0 +1,20 @@
+{
+	"custom/notifications": {
+		"exec": "swaync-client -swb",
+		"return-type": "json",
+		"escape": true,
+		"tooltip": false,
+		"format": "{icon}",
+		"format-icons": {
+			"notification": "",
+			"none": "",
+			"dnd-notification": "",
+			"dnd-none": "",
+			"inhibited-notification": "",
+			"dnd-inhibited-notification": "",
+			"dnd-inhibited-none": ""    		
+		},
+		"on-click": "swaync-client -t -sw",
+		"on-click-right": "swaync-client -d -sw"
+	}
+}

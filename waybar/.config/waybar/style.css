@@ -1,8 +1,16 @@
 @import "colors.css";
+@import "styles/workspaces.css";
+@import "styles/work-window.css";
+@import "styles/clock-menu.css";
+@import "styles/system.css";
+@import "styles/battery.css";
+@import "styles/network.css";
+@import "styles/bluetooth.css";
+@import "styles/mpris.css";
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "JetsBrainMono Nerf Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: "JetsBrainMono Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
     border: none;
 }
@@ -13,111 +21,20 @@ window#waybar {
 }
 
 
-#workspaces button {
-	color: @fg-dim;
-	padding: 0 8px;
-	background: transparent;
-}
 
-#workspaces button.active {
-	border-bottom: 2px solid @accent;
-	color: @fg
-}
 
-#workspaces button.urgent {
-	background: @critical;
-}
-
-#workspaces {
-	background: alpha(@bg, 0.8);
-	padding: 0 8px;
-	border-radius: 80px;
-	margin: 0 2px;
-}
-
-#custom-winstart,
-#custom-winsep,
-#custom-winend {
-	padding: 0px;
-	font-size: 20px;
-}
-#window.class {
-	background: alpha(@accent, 0.8);
-	color: @bg-alt;
-}
-#custom-winsep {
-	background: alpha(@bg-alt, 0.8);
-	color: alpha(@accent, 0.8);
-}
-#window.prog {
-	background: alpha(@bg-alt, 0.8);
-}
-#custom-winend {
-	color: alpha(@bg-alt, 0.8);
-}
-#custom-winstart {
-	color: alpha(@accent, 0.8);
-}
-
+#workspaces,
 #clock,
 #mpris,
-#system,
 #tray {
 	background: alpha(@bg, 0.8);
-	padding: 0 22px;
+	padding: 0 12px;
 	border-radius: 80px;
 	margin: 0 0px;
 }
 
-#custom-notifications {
-	padding: 0 6px;
-}
 
-#idle_inhibitor,
-#custom-nightlight,
-#custom-kbd,
-#power-profiles-daemon {
-	background: @bg-alt;
-	padding: 0 8px;
-	border-radius: 10px;
-}
-#power-profiles-daemon.performance {
-	color: @accent;
-}
-#power-profiles-daemon.default {
-	color: @accent;
-}
-#power-profiles-daemon.balanced {
-	color: @warning;
-}
-#power-profiles-daemon.power-saver {
-	color: @critical;
-}
-#idle_inhibitor.activated {
-	color: @accent;
-}
 
-#custom-nightlight.on {
-	background: @warning;
-	color: @bg-alt;
-}
-
-#system #network,
-#system #bluetooth,
-#system #battery,
-#system #wireplumber,
-#system #notifications {
-	padding: 0 6px;
-}
-
-#battery.warning { color: @warning; }
-#battery.critical { color: @critical; }
-
-#network.disconnected { color: @fg-dim; }
-
-#bluetooth.connected { color: @accent; }
-#bluetooth.on { color: @fg-dim; }
-#mpris.paused { color: @fg-dim; }
 
 tooltip {
 	background: @bg;

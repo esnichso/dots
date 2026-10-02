@@ -1,0 +1,3 @@
+#bluetooth.connected { color: @accent; }
+#bluetooth.on { color: @fg; }
+#bluetooth.disabled { color: @bg-alt; }

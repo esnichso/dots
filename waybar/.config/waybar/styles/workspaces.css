@@ -1,0 +1,22 @@
+#workspaces button {
+	color: @fg-dim;
+	padding: 0 8px;
+	background: transparent;
+	border-top: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+}
+
+#workspaces button.active {
+	border-bottom: 2px solid @accent;
+	color: @fg
+}
+
+#workspaces button:hover {
+	border-top: 2px solid @fg;
+	color: @fg;
+} 
+
+#workspaces button.urgent {
+	background: @critical;
+}
+

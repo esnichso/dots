@@ -1,0 +1,12 @@
+{
+	"network": {
+		"format-wifi": "{icon}", 
+		"format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
+		"format-ethernet": "󰈀",
+		"format-disconnect": "󰤮",
+		"format-disabled": "󰤮",
+		"format": "󰤮",
+		"tooltip-format": "{ifname}:\n{ipaddr}\n{essid}",
+		"on-click": "pkill -x nmtui || kitty --class tui-popup -e nmtui"
+	}
+}

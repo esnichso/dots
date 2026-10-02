@@ -1,0 +1,8 @@
+{
+	"mpris": {
+	    	"format": "\uf04b {artist} - {title}",
+	    	"max-length": 20,
+	    	"on-click": "playerctl play-pause",
+	    	"tooltip-format": "{artist} - {title}"
+    }
+}

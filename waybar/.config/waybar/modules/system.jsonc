@@ -1,0 +1,41 @@
+{
+	"group/system": {
+		"orientation": "horizontal",
+		"modules": [
+		"custom/right#bg4",
+		"custom/notifications",
+		"custom/right#bg3",
+		"wireplumber",
+		"custom/right#bg2",
+		"bluetooth", 
+		"custom/right#bg1",
+		"network", 
+		"custom/right#bg0",
+		"battery",
+		"custom/round-right"]
+	},
+	"custom/right#bg4": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right#bg3": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right#bg2": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right#bg1": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right#bg0": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/round-right": {
+		"format": "",
+		"tooltip": false
+	}
+}

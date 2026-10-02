@@ -1,0 +1,8 @@
+{
+	"bluetooth": {
+		"format-on": "󰂯",	
+		"format-disabled": "󰂲",
+		"on-click": "pkill -x bluetui || kitty --class tui-popup -e bluetui",
+		"on-click-right": "rfkill toggle bluetooth"
+	}
+}

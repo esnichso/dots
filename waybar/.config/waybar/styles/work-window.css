@@ -1,0 +1,23 @@
+#custom-winstart,
+#custom-winsep,
+#custom-winend {
+	padding: 0px;
+	font-size: 20px;
+}
+#window.class {
+	background: alpha(@accent, 0.8);
+	color: @bg-alt;
+}
+#custom-winsep {
+	background: alpha(@bg-alt, 0.8);
+	color: alpha(@accent, 0.8);
+}
+#window.prog {
+	background: alpha(@bg-alt, 0.8);
+}
+#custom-winend {
+	color: alpha(@bg-alt, 0.8);
+}
+#custom-winstart {
+	color: alpha(@accent, 0.8);
+}

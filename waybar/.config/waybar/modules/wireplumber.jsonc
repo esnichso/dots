@@ -1,0 +1,10 @@
+ {
+ 	"wireplumber": {
+ 		"format": "{icon}",
+ 		"format-icons": ["", "", ""],
+ 		"format-muted": "",
+ 		"tooltip-format": "{node_name}: {volume}",
+ 		"on-click": "pkill -x wiremix || kitty --class tui-popup -e wiremix --tab output",
+ 		"on-click-right": "swayosd-client --output-volume mute-toggle"  	
+ 	}
+ }
