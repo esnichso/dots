@@ -1,5 +1,5 @@
 #workspaces button {
-	color: @fg-dim;
+	color: @on_surface_variant;
 	padding: 0 8px;
 	background: transparent;
 	border-top: 2px solid transparent;
@@ -7,16 +7,16 @@
 }
 
 #workspaces button.active {
-	border-bottom: 2px solid @accent;
-	color: @fg
+	border-bottom: 2px solid @primary;
+	color: @on_surface
 }
 
 #workspaces button:hover {
-	border-top: 2px solid @fg;
-	color: @fg;
+	border-top: 2px solid @on_surface;
+	color: @on_surface;
 } 
 
 #workspaces button.urgent {
-	background: @critical;
+	background: @error;
 }
 

@@ -1,2 +1,2 @@
-#battery.warning { color: @warning; }
-#battery.critical { color: @critical; }
+#battery.warning { color: @tertiary; }
+#battery.critical { color: @error; }

@@ -36,3 +36,5 @@ wtype
 
 swaync
 libnotify
+
+matugen

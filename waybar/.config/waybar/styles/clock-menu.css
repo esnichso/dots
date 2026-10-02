@@ -2,28 +2,28 @@
 #custom-nightlight,
 #custom-kbd,
 #power-profiles-daemon {
-	background: @bg-alt;
+	background: @surface_container_high;
 	padding: 0 8px;
 	border-radius: 10px;
 }
 
 #power-profiles-daemon.performance {
-	color: @accent;
+	color: @primary;
 }
 #power-profiles-daemon.default {
-	color: @accent;
+	color: @primary;
 }
 #power-profiles-daemon.balanced {
-	color: @warning;
+	color: @tertiary;
 }
 #power-profiles-daemon.power-saver {
-	color: @critical;
+	color: @error;
 }
 #idle_inhibitor.activated {
-	color: @accent;
+	color: @primary;
 }
 
 #custom-nightlight.on {
-	background: @warning;
-	color: @bg-alt;
+	background: @tertiary;
+	color: @surface_container_high;
 }

@@ -1,23 +1,27 @@
-#custom-winstart,
-#custom-winsep,
-#custom-winend {
-	padding: 0px;
+#custom-round-left,
+#custom-left {
 	font-size: 20px;
+	margin: -1px 0;
 }
+
+#custom-round-left {
+	color: alpha(@surface_container, 0.8);
+}
+
 #window.class {
-	background: alpha(@accent, 0.8);
-	color: @bg-alt;
+	background: alpha(@surface_container, 0.8);
 }
-#custom-winsep {
-	background: alpha(@bg-alt, 0.8);
-	color: alpha(@accent, 0.8);
+
+#custom-left.c0 {
+	background: alpha(@surface_container_high, 0.8);
+	color: alpha(@surface_container, 0.8);
 }
+
 #window.prog {
-	background: alpha(@bg-alt, 0.8);
+	background: alpha(@surface_container_high, 0.8);
 }
-#custom-winend {
-	color: alpha(@bg-alt, 0.8);
+
+#custom-left.c1 {
+	color: alpha(@surface_container_high, 0.8);
 }
-#custom-winstart {
-	color: alpha(@accent, 0.8);
-}
+

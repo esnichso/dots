@@ -1,5 +1,5 @@
 @import url("base.css");
-@import url("file:///home/lucas/.config/waybar/colors.css");
+@import url("colors.css");
 
 /* ---------- Theme variables (used by the base style) ---------- */
 :root {

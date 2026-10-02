@@ -1,7 +1,7 @@
 {
 	"group/work": {
 	    	"orientation": "horizontal",
-	    	"modules": ["custom/winstart", "hyprland/window#class", "custom/winsep", "hyprland/window#prog", "custom/winend"]
+	    	"modules": ["custom/round-left", "hyprland/window#class", "custom/left#c0", "hyprland/window#prog", "custom/left#c1"]
 	},
 
 	"hyprland/window#class": {
@@ -10,7 +10,8 @@
 		"icon-size": 16,
 		"rewrite": {
 			"": "Desktop",
-		}
+		},
+		"tooltip": false,
 	},
 
 	"hyprland/window#prog": {
@@ -19,19 +20,20 @@
 		"rewrite": {
 			".* - (?!fish$)(\\S+)": "$1",
 			".* - fish": "fish"
-		}
+		},
+		"tooltip": false,
 	},
 
-	"custom/winsep": {
+	"custom/left#c0": {
 		"format": " ",
-		"tooltip": "false"
+		"tooltip": false,
 	},
-	"custom/winend": {
+	"custom/left#c1": {
 		"format": " ",
-		"tooltip": "false"
+		"tooltip": false,
 	},
-	"custom/winstart": {
+	"custom/round-left": {
 		"format": "",
-		"tooltip": "false"
+		"tooltip": false,
 	}
 }
