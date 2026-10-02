@@ -5,23 +5,23 @@
 }
 
 #custom-round-left {
-	color: alpha(@surface_container, 0.8);
+	color: alpha(@surface_container_lowest, 0.8);
 }
 
 #window.class {
-	background: alpha(@surface_container, 0.8);
+	background: alpha(@surface_container_lowest, 0.8);
 }
 
 #custom-left.c0 {
-	background: alpha(@surface_container_high, 0.8);
-	color: alpha(@surface_container, 0.8);
+	background: alpha(@surface_container_low, 0.8);
+	color: alpha(@surface_container_lowest, 0.8);
 }
 
 #window.prog {
-	background: alpha(@surface_container_high, 0.8);
+	background: alpha(@surface_container_low, 0.8);
 }
 
 #custom-left.c1 {
-	color: alpha(@surface_container_high, 0.8);
+	color: alpha(@surface_container_low, 0.8);
 }
 

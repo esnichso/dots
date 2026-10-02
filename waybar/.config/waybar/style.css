@@ -24,7 +24,7 @@ window#waybar {
 #clock,
 #mpris,
 #tray {
-	background: alpha(@surface_container, 0.8);
+	background: alpha(@surface_container_lowest, 0.8);
 	padding: 0 12px;
 	border-radius: 80px;
 	margin: 0 0px;
@@ -32,6 +32,6 @@ window#waybar {
 
 
 tooltip {
-	background: @surface_container;
+	background: @surface_container_lowest;
 	border-radius: 8px;
 }
