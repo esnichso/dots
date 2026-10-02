@@ -38,3 +38,6 @@ swaync
 libnotify
 
 matugen
+
+hyprlock
+hypridle
