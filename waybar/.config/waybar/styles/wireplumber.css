@@ -1,0 +1,3 @@
+#wireplumber.muted {
+	color: alpha(@on_surface, 0.5);
+}

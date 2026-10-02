@@ -7,6 +7,8 @@
 @import "styles/network.css";
 @import "styles/bluetooth.css";
 @import "styles/mpris.css";
+@import "styles/wireplumber.css";
+@import "styles/notifications.css";
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */

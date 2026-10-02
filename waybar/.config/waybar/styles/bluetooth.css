@@ -1,3 +1,2 @@
 #bluetooth.connected { color: @primary; }
-#bluetooth.on { color: @on_surface; }
-#bluetooth.disabled { color: @on_surface_variant; }
+#bluetooth.disabled { color: alpha(@on_surface, 0.5); }
