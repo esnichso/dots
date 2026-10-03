@@ -24,6 +24,10 @@ hl.bind(mainMod .. " + PERIOD", hl.dsp.exec_cmd(vars.emoji))
 hl.bind(mainMod .. " + MINUS", hl.dsp.exec_cmd("pkill -x qalc || kitty --class tui-popup -e qalc"))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("swaync-client -t"))
 hl.bind(mainMod .. " + DELETE", hl.dsp.exec_cmd(vars.powermenu))
+
+hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -z -m region --clipboard-only"))
+hl.bind("CTRL + PRINT", hl.dsp.exec_cmd("hyprshot -z -m region --raw | satty -f - --copy-command wl-copy --early-exit"))
+hl.bind("SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -z -m output --clipboard-only"))
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
 for i = 1, 10 do

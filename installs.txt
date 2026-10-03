@@ -44,3 +44,7 @@ hypridle
 
 wlogout
 hyprshutdown
+
+hyprshot
+hyprpicker
+satty
