@@ -38,6 +38,8 @@ hl.window_rule({
 	size = "800 500"
 })
 
+hl.window_rule({ match = { class = "firefox" }, no_blur = true, opacity = "1.0 override" })
+
 -- Layer rules also return a handle.
 -- local overlayLayerRule = hl.layer_rule({
 --     name  = "no-anim-overlay",
