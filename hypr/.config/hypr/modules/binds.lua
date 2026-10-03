@@ -24,6 +24,7 @@ hl.bind(mainMod .. " + PERIOD", hl.dsp.exec_cmd(vars.emoji))
 hl.bind(mainMod .. " + MINUS", hl.dsp.exec_cmd("pkill -x qalc || kitty --class tui-popup -e qalc"))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("swaync-client -t"))
 hl.bind(mainMod .. " + DELETE", hl.dsp.exec_cmd(vars.powermenu))
+hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(vars.wallpaper_switcher))
 
 hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -z -m region --clipboard-only"))
 hl.bind("CTRL + PRINT", hl.dsp.exec_cmd("hyprshot -z -m region --raw | satty -f - --copy-command wl-copy --early-exit"))

@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+dir="$HOME/Pictures/wallpapers"
+thumbs="${XDG_CACHE_HOME:-$HOME/.cache}/wallpaper-thumbs"
+link="$HOME/.cache/current-wallpaper"
+mkdir -p "$thumbs"
+
+pkill -x rofi && exit
+
+choice=$(
+	for img in "$dir"/*.{jpg,jpeg,png,webp}; do
+		[ -e "$img" ] || continue
+		name=$(basename "$img")
+		thumb="$thumbs/$name.png"
+		[ -s "$thumb" ] || magick "$img" -thumbnail 400x255^ -gravity center -extent 400x255 "$thumb"
+		printf "%s\0icon\x1f%s\n" "$name" "$thumb"
+	done | rofi -dmenu -i -show-icons -p "Wallpaper" -theme wallpaper
+)
+[ -n "$choice" ] || exit
+
+ln -sf "$dir/$choice" "$link"
+hyprctl hyprpaper wallpaper ",$dir/$choice"

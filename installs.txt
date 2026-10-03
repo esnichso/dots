@@ -48,3 +48,6 @@ hyprshutdown
 hyprshot
 hyprpicker
 satty
+
+hyprpaper
+imagemagick
