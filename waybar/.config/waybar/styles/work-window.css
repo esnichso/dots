@@ -5,23 +5,24 @@
 }
 
 #custom-round-left {
-	color: alpha(@surface_container_lowest, 0.8);
+	color: @surface_container_lowest;
+	font-size: 22;
 }
 
 #window.class {
-	background: alpha(@surface_container_lowest, 0.8);
+	background: @surface_container_lowest;
 }
 
 #custom-left.c0 {
-	background: alpha(@surface_container_low, 0.8);
-	color: alpha(@surface_container_lowest, 0.8);
+	background: @surface_container_low;
+	color: @surface_container_lowest;
 }
 
 #window.prog {
-	background: alpha(@surface_container_low, 0.8);
+	background: @surface_container_low;
 }
 
 #custom-left.c1 {
-	color: alpha(@surface_container_low, 0.8);
+	color: @surface_container_low;
 }
 
