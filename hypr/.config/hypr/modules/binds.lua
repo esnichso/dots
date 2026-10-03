@@ -23,7 +23,7 @@ hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(vars.clipboard))
 hl.bind(mainMod .. " + PERIOD", hl.dsp.exec_cmd(vars.emoji))
 hl.bind(mainMod .. " + MINUS", hl.dsp.exec_cmd("pkill -x qalc || kitty --class tui-popup -e qalc"))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("swaync-client -t"))
-
+hl.bind(mainMod .. " + DELETE", hl.dsp.exec_cmd(vars.powermenu))
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
 for i = 1, 10 do

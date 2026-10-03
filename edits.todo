@@ -1,0 +1,14 @@
+sudo systemctl edit getty@tty1
+
+
+[Service]
+ExecStart=
+ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin lucas>
+
+fish config
+if status is-login
+    and test -z "$WAYLAND_DISPLAY"
+    and test "$XDG_VTNR" = 1
+    exec start-hyprland
+end
+
