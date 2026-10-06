@@ -1,3 +1,11 @@
+local c = require("modules.colors")
+
+local function rgba(hex, alpha)
+	return "rgba(" .. hex .. (alpha or "ff") .. ")"
+end
+
+
+
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
     general = {
@@ -7,8 +15,8 @@ hl.config({
         border_size = 1,
 
         col = {
-            active_border   = { colors = {"rgba(3300ffee)", "rgba(000099ee)"}, angle = 45 },
-            inactive_border = "rgba(595959aa)",
+            active_border   = { colors = {rgba(c.primary), rgba(c.tertiary)}, angle = 45 },
+            inactive_border = rgba(c.outline_variant, "aa"),
         },
 
         -- Set to true to enable resizing windows by clicking and dragging on borders and gaps

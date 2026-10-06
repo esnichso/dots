@@ -4,128 +4,128 @@
 
 * {
   /* ---------- Scheme roles ---------- */
-  background:                 #16111b;
-  on-background:              #e9dfee;
+  background:                 #0c141b;
+  on-background:              #dbe4ed;
 
-  surface:                    #16111b;
-  surface-dim:                #16111b;
-  surface-bright:             #3d3742;
+  surface:                    #0c141b;
+  surface-dim:                #0c141b;
+  surface-bright:             #313a41;
 
-  surface-container-lowest:   #110c16;
-  surface-container-low:      #1e1a24;
-  surface-container:          #221e28;
-  surface-container-high:     #2d2833;
-  surface-container-highest:  #38333e;
+  surface-container-lowest:   #070f15;
+  surface-container-low:      #141d23;
+  surface-container:          #182127;
+  surface-container-high:     #222b32;
+  surface-container-highest:  #2d363d;
 
-  on-surface:                 #e9dfee;
-  surface-variant:            #4a4450;
-  on-surface-variant:         #cdc3d1;
+  on-surface:                 #dbe4ed;
+  surface-variant:            #3f484f;
+  on-surface-variant:         #bfc8d0;
 
-  inverse-surface:            #e9dfee;
-  inverse-on-surface:         #342e39;
+  inverse-surface:            #dbe4ed;
+  inverse-on-surface:         #293138;
 
-  outline:                    #968e9b;
-  outline-variant:            #4a4450;
+  outline:                    #89929a;
+  outline-variant:            #3f484f;
   shadow:                     #000000;
   scrim:                      #000000;
-  surface-tint:               #d9b9ff;
+  surface-tint:               #87ceff;
 
-  primary:                    #d9b9ff;
-  on-primary:                 #460085;
-  primary-container:          #6300ba;
-  on-primary-container:       #eedcff;
-  inverse-primary:            #8300f2;
+  primary:                    #87ceff;
+  on-primary:                 #00344d;
+  primary-container:          #004c6d;
+  on-primary-container:       #c8e6ff;
+  inverse-primary:            #006590;
 
-  primary-fixed:              #eedcff;
-  primary-fixed-dim:          #d9b9ff;
-  on-primary-fixed:           #2a0054;
-  on-primary-fixed-variant:   #6300ba;
+  primary-fixed:              #c8e6ff;
+  primary-fixed-dim:          #87ceff;
+  on-primary-fixed:           #001e2e;
+  on-primary-fixed-variant:   #004c6d;
 
-  secondary:                  #dabde2;
-  on-secondary:               #3d2946;
-  secondary-container:        #553f5d;
-  on-secondary-container:     #f7d8ff;
+  secondary:                  #b3c8e9;
+  on-secondary:               #1d314b;
+  secondary-container:        #344863;
+  on-secondary-container:     #d3e3ff;
 
-  secondary-fixed:            #f7d8ff;
-  secondary-fixed-dim:        #dabde2;
-  on-secondary-fixed:         #271430;
-  on-secondary-fixed-variant: #553f5d;
+  secondary-fixed:            #d3e3ff;
+  secondary-fixed-dim:        #b3c8e9;
+  on-secondary-fixed:         #051c35;
+  on-secondary-fixed-variant: #344863;
 
-  tertiary:                   #ebb6e4;
-  on-tertiary:                #482247;
-  tertiary-container:         #61395f;
-  on-tertiary-container:      #ffd6f8;
+  tertiary:                   #b8c4fa;
+  on-tertiary:                #212e5a;
+  tertiary-container:         #384472;
+  on-tertiary-container:      #dce1ff;
 
-  tertiary-fixed:             #ffd6f8;
-  tertiary-fixed-dim:         #ebb6e4;
-  on-tertiary-fixed:          #300c31;
-  on-tertiary-fixed-variant:  #61395f;
+  tertiary-fixed:             #dce1ff;
+  tertiary-fixed-dim:         #b8c4fa;
+  on-tertiary-fixed:          #0a1844;
+  on-tertiary-fixed-variant:  #384472;
 
   error:                      #ffb4ab;
   on-error:                   #690005;
   error-container:            #93000a;
   on-error-container:         #ffdad6;
 
-  source-color:               #6c5589;
+  source-color:               #0a2839;
 
   /* ---------- Tonal palettes: _NN = lightness 0..100 ---------- */
   /* primary */
   primary-0:           #000000;
-  primary-5:           #1b003b;
-  primary-10:          #2a0054;
-  primary-15:          #350c62;
-  primary-20:          #401b6d;
-  primary-25:          #4c2879;
-  primary-30:          #583485;
-  primary-35:          #644092;
-  primary-40:          #714d9f;
-  primary-50:          #8b66ba;
-  primary-60:          #a57fd6;
-  primary-70:          #c19af3;
-  primary-80:          #d9b9ff;
-  primary-90:          #eedcff;
-  primary-95:          #f8edff;
-  primary-98:          #fff7ff;
-  primary-99:          #fffbff;
+  primary-5:           #00131f;
+  primary-10:          #001e2e;
+  primary-15:          #00293d;
+  primary-20:          #00344d;
+  primary-25:          #00405d;
+  primary-30:          #004c6d;
+  primary-35:          #00587e;
+  primary-40:          #006590;
+  primary-50:          #007fb4;
+  primary-60:          #3299d1;
+  primary-70:          #55b4ed;
+  primary-80:          #87ceff;
+  primary-90:          #c8e6ff;
+  primary-95:          #e5f2ff;
+  primary-98:          #f6faff;
+  primary-99:          #fbfcff;
   primary-100:         #ffffff;
 
   /* secondary */
   secondary-0:         #000000;
-  secondary-5:         #150d1f;
-  secondary-10:        #20182a;
-  secondary-15:        #2a2235;
-  secondary-20:        #352d40;
-  secondary-25:        #41384b;
-  secondary-30:        #4c4357;
-  secondary-35:        #584e63;
-  secondary-40:        #655a6f;
-  secondary-50:        #7e7389;
-  secondary-60:        #988ca3;
-  secondary-70:        #b3a6be;
-  secondary-80:        #cfc1da;
-  secondary-90:        #ecddf7;
-  secondary-95:        #f8edff;
-  secondary-98:        #fff7ff;
-  secondary-99:        #fffbff;
+  secondary-5:         #02131e;
+  secondary-10:        #0b1d29;
+  secondary-15:        #162833;
+  secondary-20:        #21323e;
+  secondary-25:        #2c3d4a;
+  secondary-30:        #384956;
+  secondary-35:        #435562;
+  secondary-40:        #4f606e;
+  secondary-50:        #687987;
+  secondary-60:        #8193a2;
+  secondary-70:        #9badbd;
+  secondary-80:        #b7c9d8;
+  secondary-90:        #d2e5f5;
+  secondary-95:        #e5f2ff;
+  secondary-98:        #f6faff;
+  secondary-99:        #fbfcff;
   secondary-100:       #ffffff;
 
   /* tertiary */
   tertiary-0:          #000000;
-  tertiary-5:          #25060e;
-  tertiary-10:         #321018;
-  tertiary-15:         #3e1a22;
-  tertiary-20:         #4b252d;
-  tertiary-25:         #582f37;
-  tertiary-30:         #653b43;
-  tertiary-35:         #72464e;
-  tertiary-40:         #80525a;
-  tertiary-50:         #9b6a72;
-  tertiary-60:         #b7838b;
-  tertiary-70:         #d49da6;
-  tertiary-80:         #f2b7c1;
-  tertiary-90:         #ffd9de;
-  tertiary-95:         #ffecee;
-  tertiary-98:         #fff8f7;
+  tertiary-5:          #140b2a;
+  tertiary-10:         #1f1635;
+  tertiary-15:         #292140;
+  tertiary-20:         #342b4b;
+  tertiary-25:         #403657;
+  tertiary-30:         #4b4163;
+  tertiary-35:         #574d6f;
+  tertiary-40:         #63597c;
+  tertiary-50:         #7c7196;
+  tertiary-60:         #978bb1;
+  tertiary-70:         #b2a5cc;
+  tertiary-80:         #cdc0e9;
+  tertiary-90:         #e9ddff;
+  tertiary-95:         #f6edff;
+  tertiary-98:         #fef7ff;
   tertiary-99:         #fffbff;
   tertiary-100:        #ffffff;
 
@@ -151,43 +151,43 @@
 
   /* neutral */
   neutral-0:           #000000;
-  neutral-5:           #121014;
-  neutral-10:          #1d1b1e;
-  neutral-15:          #272528;
-  neutral-20:          #322f33;
-  neutral-25:          #3d3a3e;
-  neutral-30:          #49464a;
-  neutral-35:          #555155;
-  neutral-40:          #615d61;
-  neutral-50:          #7a767a;
-  neutral-60:          #948f94;
-  neutral-70:          #afaaae;
-  neutral-80:          #cac5c9;
-  neutral-90:          #e7e1e5;
-  neutral-95:          #f5eff4;
-  neutral-98:          #fef7fc;
-  neutral-99:          #fffbff;
+  neutral-5:           #0f1113;
+  neutral-10:          #191c1e;
+  neutral-15:          #242628;
+  neutral-20:          #2e3133;
+  neutral-25:          #393c3e;
+  neutral-30:          #454749;
+  neutral-35:          #515355;
+  neutral-40:          #5d5e61;
+  neutral-50:          #75777a;
+  neutral-60:          #8f9193;
+  neutral-70:          #aaabae;
+  neutral-80:          #c5c6c9;
+  neutral-90:          #e2e2e5;
+  neutral-95:          #f0f0f3;
+  neutral-98:          #f9f9fc;
+  neutral-99:          #fcfcff;
   neutral-100:         #ffffff;
 
   /* neutral_variant */
   neutral-variant-0:   #000000;
-  neutral-variant-5:   #130f17;
-  neutral-variant-10:  #1e1a22;
-  neutral-variant-15:  #28242c;
-  neutral-variant-20:  #332f37;
-  neutral-variant-25:  #3e3a42;
-  neutral-variant-30:  #4a454e;
-  neutral-variant-35:  #56505a;
-  neutral-variant-40:  #625c66;
-  neutral-variant-50:  #7b757f;
-  neutral-variant-60:  #958e99;
-  neutral-variant-70:  #b0a9b3;
-  neutral-variant-80:  #ccc4cf;
-  neutral-variant-90:  #e8e0eb;
-  neutral-variant-95:  #f7eef9;
-  neutral-variant-98:  #fff7ff;
-  neutral-variant-99:  #fffbff;
+  neutral-variant-5:   #0b1216;
+  neutral-variant-10:  #161c21;
+  neutral-variant-15:  #20272c;
+  neutral-variant-20:  #2b3136;
+  neutral-variant-25:  #363c42;
+  neutral-variant-30:  #41484d;
+  neutral-variant-35:  #4d5359;
+  neutral-variant-40:  #595f65;
+  neutral-variant-50:  #71787e;
+  neutral-variant-60:  #8b9198;
+  neutral-variant-70:  #a6acb2;
+  neutral-variant-80:  #c1c7ce;
+  neutral-variant-90:  #dde3ea;
+  neutral-variant-95:  #ebf1f8;
+  neutral-variant-98:  #f6faff;
+  neutral-variant-99:  #fbfcff;
   neutral-variant-100: #ffffff;
   /* ---------- Extras ---------- */
-  window-bg: rgba(42, 34, 53, 0.85);
+  window-bg: rgba(22, 40, 51, 0.85);
 }
