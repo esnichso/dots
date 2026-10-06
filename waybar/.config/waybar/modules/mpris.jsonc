@@ -1,6 +1,15 @@
 {
 	"mpris": {
-	    	"format": "\uf04b {artist} - {title}",
+	    	"format": "{player_icon} {status_icon} {artist} - {title}",
+			"player-icons": {
+				"default": "",
+				"firefox": "",
+				"spotify": "",
+			},
+			"status-icons": {
+				"paused": "",
+				"playing": ""
+			},
 	    	"max-length": 20,
 	    	"on-click": "playerctl play-pause",
 	    	"tooltip-format": "{artist} - {title}"
