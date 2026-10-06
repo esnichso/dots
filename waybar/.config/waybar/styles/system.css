@@ -17,49 +17,49 @@
 }
 
 #custom-round-right {
-	color: @surface_container_lowest;
+	color: @secondary_15;
 }
 
 #battery {
-	background: @surface_container_lowest;
+	background: @secondary_15;
 }
 
 #custom-right.bg0 {
-	color: @surface_container_lowest;
-	background: @surface_container_low;
+	color: @secondary_15;
+	background: @secondary_20;
 }
 
 #network {
-	background: @surface_container_low;
+	background: @secondary_20;
 }
 
 #custom-right.bg1 {
-	color: @surface_container_low;
-	background: @surface_container;
+	color: @secondary_20;
+	background: @secondary_25;
 }
 
 #bluetooth {
-	background: @surface_container;
+	background: @secondary_25;
 }
 
 #custom-right.bg2 {
-	color: @surface_container;
-	background: @surface_container_high;
+	color: @secondary_25;
+	background: @secondary_30;
 }
 
 #wireplumber {
-	background: @surface_container_high;
+	background: @secondary_30;
 }
 
 #custom-right.bg3 {
-	color: @surface_container_high;
-	background: @surface_container_highest;
+	color: @secondary_30;
+	background: @secondary_35;
 }
 
 #custom-notifications {
-	background: @surface_container_highest;
+	background: @secondary_35;
 }
 
 #custom-right.bg4 {
-	color: @surface_container_highest;
+	color: @secondary_35;
 }

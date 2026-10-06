@@ -1,0 +1,29 @@
+
+@define-color primary                    {{colors.primary.default.hex}};
+@define-color on_primary                 {{colors.on_primary.default.hex}};
+@define-color primary_container          {{colors.primary_container.default.hex}};
+@define-color on_primary_container       {{colors.on_primary_container.default.hex}};
+@define-color secondary                  {{colors.secondary.default.hex}};
+@define-color on_secondary               {{colors.on_secondary.default.hex}};
+@define-color secondary_container        {{colors.secondary_container.default.hex}};
+@define-color on_secondary_container     {{colors.on_secondary_container.default.hex}};
+@define-color tertiary                   {{colors.tertiary.default.hex}};
+@define-color on_tertiary                {{colors.on_tertiary.default.hex}};
+@define-color tertiary_container         {{colors.tertiary_container.default.hex}};
+@define-color on_tertiary_container      {{colors.on_tertiary_container.default.hex}};
+@define-color error                      {{colors.error.default.hex}};
+@define-color on_error                   {{colors.on_error.default.hex}};
+@define-color error_container            {{colors.error_container.default.hex}};
+@define-color on_error_container         {{colors.on_error_container.default.hex}};
+@define-color shadow                     {{colors.shadow.default.hex}};
+
+@define-color surface                    mix({{colors.surface.default.hex}}, @primary, 0.3);
+@define-color surface_container_lowest   mix({{colors.surface_container_lowest.default.hex}}, @primary, 0.3);
+@define-color surface_container_low      mix({{colors.surface_container_low.default.hex}}, @primary, 0.3);
+@define-color surface_container          mix({{colors.surface_container.default.hex}}, @primary, 0.3);
+@define-color surface_container_high     mix({{colors.surface_container_high.default.hex}}, @primary, 0.3);
+@define-color surface_container_highest  mix({{colors.surface_container_highest.default.hex}}, @primary, 0.3);
+@define-color on_surface                 mix({{colors.on_surface.default.hex}}, @primary, 0.3);
+@define-color on_surface_variant         mix({{colors.on_surface_variant.default.hex}}, @primary, 0.3);
+@define-color outline                    mix({{colors.outline.default.hex}}, @primary, 0.3);
+@define-color outline_variant            mix({{colors.outline_variant.default.hex}}, @primary, 0.3);

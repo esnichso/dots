@@ -2,7 +2,7 @@
 #custom-nightlight,
 #custom-kbd,
 #power-profiles-daemon {
-	background: @surface_container_low;
+	background: @secondary_20;
 	padding: 0 8px;
 	border-radius: 10px;
 }
@@ -25,5 +25,5 @@
 
 #custom-nightlight.on {
 	background: @tertiary;
-	color: @surface_container_low;
+	color: @secondary_20;
 }
