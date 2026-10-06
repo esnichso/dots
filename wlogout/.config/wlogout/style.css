@@ -36,7 +36,7 @@ button:active {
 
 #reboot:focus, #reboot:hover,
 #shutdown:focus, #shutdown:hover {
-	border-color: @error;
+	border-color: @error_container;
 }
 
 #lock {background-image: url("/usr/share/wlogout/icons/lock.png");}
