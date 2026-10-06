@@ -10,13 +10,10 @@ listview {
 	fixed-columns: true;
 	fixed-height: true;
 	flow: horizontal;
-	spacing: 10px;
 }
 
 element {
 	orientation: vertical;
-	padding: 8px;
-	spacing: 6px;
 	border-radius: 10px;
 }
 

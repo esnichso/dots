@@ -32,7 +32,7 @@ inputbar {
 }
 
 prompt {
-	text-color: @primary-container;
+	text-color: @on-surface;
 }
 
 entry {
