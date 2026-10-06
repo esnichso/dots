@@ -28,7 +28,7 @@ hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(vars.wallpaper_switcher))
 
 hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -z -m region --clipboard-only"))
 hl.bind("CTRL + PRINT", hl.dsp.exec_cmd("hyprshot -z -m region --raw | satty -f - --copy-command wl-copy --early-exit"))
-hl.bind("SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -z -m output --clipboard-only"))
+hl.bind("SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -m output -m $(hyprctl activeworkspace -j | jq -r '.monitor') --clipboard-only"))
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
 for i = 1, 10 do
