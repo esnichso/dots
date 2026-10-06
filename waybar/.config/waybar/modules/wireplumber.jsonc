@@ -1,7 +1,7 @@
  {
  	"wireplumber": {
  		"format": "{icon}",
- 		"format-icons": ["", "", ""],
+ 		"format-icons": ["", "", ""],
  		"format-muted": "",
  		"tooltip-format": "{node_name}: {volume}",
  		"on-click": "pkill -x wiremix || kitty --class tui-popup -e wiremix --tab output",
