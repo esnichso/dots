@@ -1,19 +1,19 @@
 @import url("base.css");
-@import url("colors.css");
+@import url("file:///home/lucas/.config/waybar/colors.css");
 
-/* ---------- Theme variables (used by the base style) ---------- */
+/* ---------- Variables the base style uses ---------- */
 :root {
-  --border-radius: 12px;
-  --text-color: @fg;
-  --text-color-disabled: @fg-dim;
-  --cc-bg: alpha(@bg, 0.92);
-  --noti-border-color: alpha(@fg, 0.08);
-  --noti-bg-darker: @bg;
-  --noti-bg-hover: @bg-alt;
-  --noti-bg-focus: alpha(@bg-alt, 0.6);
-  --noti-close-bg: @bg-alt;
-  --noti-close-bg-hover: @accent;
-  --bg-selected: @accent;
+  --border-radius: 14px;
+  --text-color: @on_surface;
+  --text-color-disabled: @on_surface_variant;
+  --cc-bg: @secondary_15;
+  --noti-border-color: transparent;
+  --noti-bg-darker: @secondary_15;
+  --noti-bg-hover: @secondary_25;
+  --noti-bg-focus: @secondary_25;
+  --noti-close-bg: @secondary_25;
+  --noti-close-bg-hover: @error;
+  --bg-selected: @primary_container;
   --font-size-summary: 14px;
   --font-size-body: 13px;
   --notification-icon-size: 48px;
@@ -23,63 +23,104 @@
   font-family: "JetBrainsMono Nerd Font";
 }
 
-/* ---------- Notifications (popups and in the panel) ---------- */
-.notification-row .notification-background .notification {
-  background: @bg;
-  border: 1px solid alpha(@fg, 0.08);
-}
-
-.notification .time { color: @fg-dim; font-weight: normal; }
-.notification .body { color: @fg-dim; }
-
-/* Critical: colored border and title */
-.notification-row .notification-background .notification.critical {
-  border: 2px solid @critical;
-}
-.notification.critical .summary { color: @critical; }
-
-/* Action buttons under a notification */
-.notification-action > button { background: @bg-alt; }
-.notification-action > button:hover { background: @accent; color: @bg; }
-
-.close-button:hover { color: @bg; }
-
-/* ---------- Panel ---------- */
+/* ---------- The panel ---------- */
 .control-center {
-  border: 1px solid alpha(@fg, 0.08);
+  background: @secondary_15;
+  border: 1px solid @secondary_25;
+  border-radius: 18px;
+  padding: 6px;
 }
-.control-center .notification { box-shadow: none; }
 
-/* Every widget gets the same rounded block */
+/* "No Notifications" placeholder */
+.control-center-list-placeholder {
+  color: @on_surface_variant;
+  opacity: 0.6;
+}
+
+/* ---------- Widgets: one step lighter than the panel ---------- */
 .widget-title,
 .widget-dnd,
 .widget-buttons-grid,
 .widget-mpris,
 .widget-volume,
 .widget-backlight {
-  background: @bg-alt;
+  background: @secondary_20;
+  border-radius: 14px;
+  margin: 4px;
+  padding: 8px 12px;
 }
 
-/* Title and "Clear all" */
-.widget-title > label { font-weight: bold; }
-.widget-title > button {
-  background: @bg;
-  color: @fg;
-  border-radius: 999px;
-  padding: 4px 12px;
+/* Title + "Clear All" */
+.widget-title > label {
+  font-size: 16px;
+  font-weight: bold;
+  color: @on_surface;
 }
-.widget-title > button:hover { background: @critical; color: @bg; }
+.widget-title > button {
+  background: @secondary_25;
+  color: @on_surface;
+  border: none;
+  border-radius: 999px;
+  padding: 4px 14px;
+}
+.widget-title > button:hover {
+  background: @error;
+  color: @on_error;
+}
 
 /* Do Not Disturb switch */
-.widget-dnd > switch:checked { background: @accent; }
+.widget-dnd > label { color: @on_surface; }
+.widget-dnd > switch {
+  background: @secondary_30;
+  border: none;
+  border-radius: 999px;
+}
+.widget-dnd > switch:checked { background: @primary; }
+.widget-dnd > switch slider {
+  background: @on_surface;
+  border-radius: 999px;
+}
 
-/* Button grid: off = dark, on = accent */
+/* ---------- Notification cards (popups and in the panel) ---------- */
+.notification-row .notification-background .notification {
+  background: @secondary_20;
+  border: 1px solid transparent;
+  border-radius: 14px;
+}
+.notification .summary { color: @on_surface; }
+.notification .body    { color: @on_surface_variant; }
+.notification .time    { color: @on_surface_variant; font-weight: normal; }
+
+/* Critical: red outline and title */
+.notification-row .notification-background .notification.critical {
+  border: 2px solid @error;
+}
+.notification.critical .summary { color: @error; }
+
+/* Action buttons under a notification */
+.notification-action > button {
+  background: @secondary_25;
+  color: @on_surface;
+  border-radius: 10px;
+}
+.notification-action > button:hover {
+  background: @primary_container;
+  color: @on_primary_container;
+}
+
+/* Close button */
+.close-button:hover { color: @on_error; }
+.control-center .notification { box-shadow: none; }
+
+/* ---------- Toggle grid (if you use one) ---------- */
 .widget-buttons-grid button {
-  background: @bg;
-  color: @fg;
+  background: @secondary_25;
+  color: @on_surface;
   border-radius: 10px;
   min-height: 40px;
-  font-size: 18px;
 }
-.widget-buttons-grid button:hover { background: alpha(@accent, 0.3); }
-.widget-buttons-grid button:checked { background: @accent; color: @bg; }
+.widget-buttons-grid button:hover   { background: @secondary_30; }
+.widget-buttons-grid button:checked {
+  background: @primary_container;
+  color: @on_primary_container;
+}
