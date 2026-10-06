@@ -5,12 +5,6 @@
 	"keybind": "l"
 }
 {
-	"label": "logout",
-	"action": "hyprshutdown",
-	"text": "Logout",
-	"keybind": "e"
-}
-{
 	"label": "suspend",
 	"action": "systemctl suspend",
 	"text": "Suspend",
