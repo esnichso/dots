@@ -6,7 +6,7 @@ mainbox  { children: [ inputbar, listview ]; }
 inputbar { children: [ prompt, entry ]; }
 entry    { placeholder: "Search clipboard…"; }
 
-textbox  { text-color: @fg-dim; }
+textbox  { text-color: @on-surface-variant; }
 
 listview { lines: 5; }
 element  { spacing: 12px; }

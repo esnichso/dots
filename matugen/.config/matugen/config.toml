@@ -3,3 +3,7 @@
 [templates.waybar]
 input_path = "templates/waybar-colors3.css"
 output_path = "~/.config/waybar/colors.css"
+
+[templates.rofi]
+input_path = "templates/rofi-colors.css"
+output_path = "~/.config/rofi/colors.rasi"

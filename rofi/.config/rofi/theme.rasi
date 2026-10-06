@@ -3,7 +3,7 @@
 * {
 	font: "JetsBrainMono Nerd Font 12";
 	background-color: transparent;
-	text-color: @fg;
+	text-color: @on-surface;
 	margin: 0;
 	padding: 0;
 	spacing: 0;
@@ -13,7 +13,7 @@ window {
 	location: center;
 	anchor: center;
 	width: 400px;
-	background-color: @bg-trans;
+	background-color: @window-bg;
 	border-radius: 12px;
 	padding: 12px;
 }
@@ -24,7 +24,7 @@ mainbox {
 }
 
 inputbar {
-	background-color: @bg-alt;
+	background-color: @secondary-25;
 	border-radius: 999px;
 	padding: 8px 14px;
 	spacing: 8px;
@@ -32,12 +32,12 @@ inputbar {
 }
 
 prompt {
-	text-color: @accent;
+	text-color: @primary-container;
 }
 
 entry {
 	placeholder: "Search...";
-	placeholder-color: @fg-dim;
+	placeholder-color: @on-surface-variant;
 }
 
 
@@ -55,8 +55,8 @@ element {
 }
 
 element selected.normal {
-	background-color: @accent;
-	text-color: @bg;
+	background-color: @primary-container;
+	text-color: @on-primary-container;
 }
 element-icon {
 	size: 24px;
@@ -70,10 +70,10 @@ element-text {
 button {
 	padding: 4px 10px;
 	border-radius: 999px;
-	background-color: @bg-alt;
-	text-color: @fg-dim;
+	background-color: @secondary-25;
+	text-color: @on-surface-variant;
 }
 button selected {
-	background-color: @accent;
-	text-color: @bg;
+	background-color: @primary-container;
+	text-color: @on-primary-container;
 }
