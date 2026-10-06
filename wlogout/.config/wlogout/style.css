@@ -1,0 +1,46 @@
+@import url("file:///home/lucas/.config/waybar/colors.css");
+
+* {
+	background-image: none;
+	box-shadow: none;
+	font-family: "JetBrainsMono Nerd Font";
+}
+
+window {
+	background-color: alpha(@secondary_10, 0.6);
+}
+
+button {
+	color: @on_surface;
+	background-color: @secondary_20;
+	border: 2px solid transparent;
+	border-radius: 24px;
+	margin: 12px;
+	font-size: 15px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+	transition: all 0.2s ease;
+}
+
+button:focus,
+button:hover {
+	background-color: @secondary_30;
+	border-color: @primary_container;
+}
+
+button:active {
+	background-color: @primary_container;
+	color: @on_primary_container;
+}
+
+#reboot:focus, #reboot:hover,
+#shutdown:focus, #shutdown:hover {
+	border-color: @error;
+}
+
+#lock {background-image: url("/usr/share/wlogout/icons/lock.png");}
+#suspend {background-image: url("/usr/share/wlogout/icons/suspend.png");}
+#shutdown {background-image: url("/usr/share/wlogout/icons/shutdown.png");}
+#reboot {background-image: url("/usr/share/wlogout/icons/reboot.png");}
+

@@ -69,6 +69,11 @@ hl.layer_rule({
 	ignore_alpha = 0.1
 })
 
+hl.layer_rule({
+	match = { namespace = "logout_dialog" },
+	blur = true,
+})
+
 -- Ref https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
 -- "Smart gaps" / "No gaps when only"
 -- uncomment all if you wish to use that.
