@@ -22,3 +22,4 @@ ln -sf "$dir/$choice" "$link"
 hyprctl hyprpaper wallpaper ",$dir/$choice"
 matugen image "$dir/$choice" -m dark -t scheme-vibrant --source-color-index 0
 swaync-client -rs
+pkill swayosd-server && swayosd-server
