@@ -53,3 +53,5 @@ hyprpaper
 imagemagick
 
 yazi
+
+adw-gtk-theme

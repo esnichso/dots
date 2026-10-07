@@ -12,3 +12,9 @@ if status is-login
     exec start-hyprland
 end
 
+--------------
+
+zoxide?
+
+gsettings for gtk theming:
+gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
