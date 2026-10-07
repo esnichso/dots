@@ -27,6 +27,7 @@ button:focus,
 button:hover {
 	background-color: @secondary_30;
 	border-color: @primary_container;
+	outline: none;
 }
 
 button:active {
