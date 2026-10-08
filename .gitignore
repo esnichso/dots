@@ -4,3 +4,4 @@
 /waybar/.config/waybar/colors.css
 /kitty/.config/kitty/matugen.conf
 /fish/.config/fish/fish_variables
+/fish/.config/fish/fisher/conf.d

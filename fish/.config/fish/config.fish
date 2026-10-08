@@ -1,4 +1,3 @@
-source /usr/share/cachyos-fish-config/conf.d/done.fish
 
 
 if status is-login
