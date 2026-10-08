@@ -5,16 +5,3 @@ sudo systemctl edit getty@tty1
 ExecStart=
 ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin lucas>
 
-fish config
-if status is-login
-    and test -z "$WAYLAND_DISPLAY"
-    and test "$XDG_VTNR" = 1
-    exec start-hyprland
-end
-
---------------
-
-zoxide?
-
-gsettings for gtk theming:
-gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
