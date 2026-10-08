@@ -1,0 +1,162 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[](fg:accent)\
+$os\
+$username\
+[](bg:seg2 fg:accent)\
+$directory\
+[](bg:seg3 fg:seg2)\
+$git_branch\
+$git_status\
+[](fg:seg3 bg:seg4)\
+$c\
+$rust\
+$golang\
+$nodejs\
+$bun\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+[](fg:seg4 bg:seg5)\
+$docker_context\
+$conda\
+$pixi\
+[](fg:seg5)
+$cmd_duration\
+$line_break\
+$character"""
+
+palette = 'matugen'
+
+[os]
+disabled = false
+style = "bg:accent fg:on_accent"
+
+[os.symbols]
+CachyOS = ""
+
+[username]
+show_always = true
+style_user = "bg:accent fg:on_accent"
+style_root = "bg:accent fg:on_accent"
+format = '[ $user]($style)'
+
+[directory]
+style = "bg:seg2 fg:text"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
+
+[git_branch]
+symbol = ""
+style = "bg:seg3"
+format = '[[ $symbol $branch ](fg:text bg:seg3)]($style)'
+
+[git_status]
+style = "bg:seg3"
+format = '[[($all_status$ahead_behind )](fg:text bg:seg3)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:seg4"
+format = '[[ $symbol( $version) ](fg:text bg:seg4)]($style)'
+
+[bun]
+symbol = ""
+style = "bg:seg4"
+format = '[[ $symbol( $version) ](fg:text bg:seg4)]($style)'
+
+[c]
+symbol = " "
+style = "bg:seg4"
+format = '[[ $symbol( $version) ](fg:text bg:seg4)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:seg4"
+format = '[[ $symbol( $version) ](fg:text bg:seg4)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:seg4"
+format = '[[ $symbol( $version) ](fg:text bg:seg4)]($style)'
+
+[php]
+symbol = ""
+style = "bg:seg4"
+format = '[[ $symbol( $version) ](fg:text bg:seg4)]($style)'
+
+[java]
+symbol = " "
+style = "bg:seg4"
+format = '[[ $symbol( $version) ](fg:text bg:seg4)]($style)'
+
+[kotlin]
+symbol = ""
+style = "bg:seg4"
+format = '[[ $symbol( $version) ](fg:text bg:seg4)]($style)'
+
+[haskell]
+symbol = ""
+style = "bg:seg4"
+format = '[[ $symbol( $version) ](fg:text bg:seg4)]($style)'
+
+[python]
+symbol = ""
+style = "bg:seg4"
+format = '[[ $symbol( $version)(\(#$virtualenv\)) ](fg:text bg:seg4)]($style)'
+
+[docker_context]
+symbol = ""
+style = "bg:seg5"
+format = '[[ $symbol( $context) ](fg:text bg:seg5)]($style)'
+
+[conda]
+style = "bg:seg5"
+format = '[[ $symbol( $environment) ](fg:text bg:seg5)]($style)'
+
+[pixi]
+style = "bg:seg5"
+format = '[[ $symbol( $version)( $environment) ](fg:text bg:seg5)]($style)'
+
+[line_break]
+disabled = false
+
+[character]
+disabled = false
+success_symbol = '[❯](bold fg:ok)'
+error_symbol = '[❯](bold fg:err)'
+vimcmd_symbol = '[❮](bold fg:ok)'
+vimcmd_replace_one_symbol = '[❮](bold fg:accent)'
+vimcmd_replace_symbol = '[❮](bold fg:accent)'
+vimcmd_visual_symbol = '[❮](bold fg:warn)'
+
+[cmd_duration]
+show_milliseconds = true
+format = "  $duration "
+style = "bg:seg5"
+disabled = false
+show_notifications = false
+min_time_to_notify = 45000
+
+[palettes.matugen]
+accent    = "{{colors.primary_container.default.hex}}"
+on_accent = "{{colors.on_primary_container.default.hex}}"
+seg2      = "{{palettes.secondary._40.hex}}"
+seg3      = "{{palettes.secondary._35.hex}}"
+seg4      = "{{palettes.secondary._30.hex}}"
+seg5      = "{{palettes.secondary._25.hex}}"
+text      = "{{colors.on_surface.default.hex}}"
+ok        = "{{colors.primary.default.hex}}"
+warn      = "{{colors.tertiary.default.hex}}"
+err       = "{{colors.error.default.hex}}"

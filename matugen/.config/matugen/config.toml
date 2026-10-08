@@ -40,3 +40,8 @@ output_path = "~/.config/qt6ct/colors/matugen.conf"
 [templates.kitty]
 input_path = "templates/kitten-colors.conf"
 output_path = "~/.config/kitty/matugen.conf"
+
+[templates.starship]
+input_path = "templates/starship.toml"
+output_path = "~/.config/starship.toml"
+post_hook = "fish -c 'set -U theme_reload (random)'"
